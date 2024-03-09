@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: #FFE4E1;
+    background-size: 100%;
+    color: #000000;
+}
+
+
+.cabecalho {
+    display: flex;
+    background-color:   #DB7093;
+    padding: 15px 0;
+    justify-content: left;
+    gap: 470px;px;px;
+}
+
+
+.cabecalho__texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F6F0F0;
+}
+
+
+.apresentacao {
+    margin: 0% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.apresentação__conteudo {
+    flex-direction: column;
+    width: 770px;
+}
+
+.apresentacao__conteudo__titulo {
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.dados__entrada__conteudo {
+    background: none;
+    color: #DB7093;
+    border: 4px solid   #DB7093;
+    width: 680px;
+    height: 430px;
+    font-size: 32px;
+    font-weight: 200;
+    border-radius: 30px;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.observacao {
+    padding: 15px 0px 15px 0px;
+    display: flex;
+}
+
+.observacao__texto{
+    color:  #DB7093;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+}
+
+
+.botao {
+    padding: 1% 0 3% 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.botao__codificar{
+    box-shadow: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px;
+    background-color:   #DB7093;
+    color: #F6F0F0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: 400ms;
+    
+
+
+}
+
+.botao__codificar:hover {
+    box-shadow: 0px 0px 10px 10px #F6F0F0;
+    font-size: 20px;
+
+}
+
+.botao__decodificar {
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px;
+    background-color:  #F6F0F0;
+    color: #FF1493;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: 400ms;
+
+}
+
+.conteudo__botao__decodificar:hover {
+    box-shadow: 0px 0px 10px 10px #a506c5;
+    font-size: 20px;
+}   
+
+/* coluna direita c/ imagem inicial */
+
+.areaSaida__dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F6F0F0; 
+    width: 300px;
+    height: 600px;
+    border-radius: 30px;
+    padding: 30px 30px 30px 30px;
+}
+
+.areaSaida__dados__texto{
+    font-family: 'Montserrat', sans-serif;
+    color: #232427;
+    font-size: 1.0rem;
+    text-align: center;   
+}
+
+.espaco__saida__texto strong{
+    font-size: 1.4rem;
+    color:#a506c5;
+    font-weight: bold;
+
+}
+
+/* coluna direita c/ resultado */
+
+.areaSaida__conteudo {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F6F0F0; 
+    width: 300px;
+    height: 700px;
+    border-radius: 30px;
+    padding: 30px 30px 30px 30px;
+}
+
+.areaSaida__conteudo__resultado{
+    background: none;
+    border: none;
+    width: 300px;
+    height: 600px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.areaSaida__conteudo__botao__copiar {
+    box-shadow: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px;
+    background-color:   #DB7093;
+    color: #F6F0F0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: 400ms;
+}  
+
+
+.rodape {
+    display: flex;
+    background-color:   #DB7093;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.rodape__texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color:  black;
+
+}
+
+/* adaptação para mobile */
+
+@media (max-width: 1200px) {
+
+    .apresentacao{
+        flex-direction: column;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .areaSaida__dados{
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .areaSaida__conteudo{
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    } 
+
+    .areaSaida__conteudo__resultado{
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+        
+    }
+}
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        justify-content: center;
+
+    }
+
+    .apresentacao {
+        flex-direction: column;         
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .logo__alura {
+        display: none;
+
+    }
+
+    .dados__entrada {
+        text-align: center; 
+    }
+
+    .botao {
+        flex-direction: column;
+        font-size: 50%;
+        gap: 10px;
+        align-items: center;
+    
+    }
+
+    .observacao {
+        text-align: center; 
+    }
+
+    .observacao__imagem{
+        display: none;
+
+    }
+
+    .dados__entrada{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .dados__entrada__conteudo{
+        padding: 5px;
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .areaSaida__dados{
+        width: 70%;
+        height: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .areaSaida__conteudo{
+        width: 70%;
+        height: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+
+    .areaSaida__conteudo__resultado{
+        width: 70%;
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .rodape {
+        justify-content: center;
+        text-align: center;
+    }
+}

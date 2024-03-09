@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos </title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="cabecalho"> 
+        <img class="logo__alura" src="assets/alura.png" alt="Logomarca da alura">  
+        <h1 class="cabecalho__texto">Challenge ONE:Desafio Decodificador</h1>
+
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+                <div class="dados__entrada">
+                    <textarea class="dados__entrada__conteudo" id="texto" placeholder="Digite seu texto"></textarea>
+                </div>
+                <div class="observacao">            
+                    <img class="observacao__imagem" src="assets/exclamacao.png" alt="Ícone de Exclamação"></a>
+                    <p class="observacao__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botao">
+                    <button class="botao__codificar" onclick="escolherOpcao('codificar')">Criptografar</button>
+                    <button class="botao__decodificar" onclick="escolherOpcao('decodificar')">Descriptografar</button>
+                </div>
+        </section>
+        <section class="areaSaida">
+            <div class="areaSaida__dados">
+                <img class="areaSaida__dados__imagem" src="assets/procurando.png" alt="Figura de uma pessoa segurando uma lupa.">
+                <p class="areaSaida__dados__texto"><strong>Nenhuma mensagem encontrada! </strong><br><br>Digite um texto que você deseja criptografar ou descriptografar.</p>  
+            </div>
+            <div class="areaSaida__conteudo">
+                <textarea class="areaSaida__conteudo__resultado" id="resultado" readonly></textarea>
+                <button class="areaSaida__conteudo__botao__copiar" onclick="copiarTexto()" id="Copiar">Copiar</button>
+            </div>
+        </section>
+        <script src="scripts/main.js"></script>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">DESAFIO REALIZADO por Rosiane Aparecida da Silva</p>
+        <a class href="https://www.linkedin.com/in/rosiane-aparecida-da-silva-b06323258">
+        <img src="assets/linkedin.png" alt="Ícone do LinkedIn"></a>
+        <a class href="https://github.com/rosi-matheus">
+        <img src="assets/github.png" alt="Ícone do GitHub"></a>
+    </footer>
+    
+</body>
+</html>
